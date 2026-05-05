@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — PublicadorAutomatico</title>
-  <meta name="description" content="Privacy Policy for PublicadorAutomatico, a personal Pinterest automation tool by Gustavo Bertazzoli." />
+  <meta name="description" content="Privacy Policy for PublicadorAutomatico, a personal automation tool by Gustavo Bertazzoli." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap" rel="stylesheet">
@@ -15,18 +15,12 @@
       --color-surface: #ffffff;
       --color-text: #1a1916;
       --color-text-muted: #6b6a67;
-      --color-primary: #e60023;
+      --color-primary: #2563eb;
       --color-border: rgba(0,0,0,0.08);
       --font-body: 'Inter', system-ui, sans-serif;
     }
     html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
-    body {
-      font-family: var(--font-body);
-      background: var(--color-bg);
-      color: var(--color-text);
-      min-height: 100dvh;
-      display: flex; flex-direction: column;
-    }
+    body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text); min-height: 100dvh; display: flex; flex-direction: column; }
     a { color: var(--color-primary); }
 
     nav {
@@ -38,48 +32,24 @@
     }
     .logo {
       display: flex; align-items: center; gap: 0.625rem;
-      font-weight: 600; font-size: 1rem; color: var(--color-text);
-      text-decoration: none;
+      font-weight: 700; font-size: 1rem; color: var(--color-text);
+      text-decoration: none; letter-spacing: -0.02em;
     }
-    nav a.nav-link {
-      font-size: 0.875rem; color: var(--color-text-muted);
-    }
-    nav a.nav-link:hover { color: var(--color-text); }
+    nav a.nav-link { font-size: 0.875rem; color: var(--color-text-muted); transition: color 180ms; }
+    nav a.nav-link:hover { color: var(--color-text); text-decoration: none; }
 
     main {
       flex: 1;
-      max-width: 720px;
-      margin: 3rem auto 5rem;
-      padding: 0 1.5rem;
-      width: 100%;
+      max-width: 680px; margin: 0 auto;
+      width: 100%; padding: 3.5rem 1.5rem 5rem;
     }
-
-    .page-header { margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--color-border); }
-    .page-header p { font-size: 0.8rem; color: var(--color-text-muted); margin-top: 0.5rem; }
-    h1 { font-size: clamp(1.5rem, 4vw, 2.25rem); font-weight: 700; letter-spacing: -0.02em; }
-
-    .policy-label {
-      display: inline-block;
-      background: #fef0f1; color: var(--color-primary);
-      border: 1px solid rgba(230,0,35,0.15);
-      border-radius: 9999px; padding: 0.25rem 0.75rem;
-      font-size: 0.75rem; font-weight: 600;
-      letter-spacing: 0.04em; text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-
-    section.policy-section { margin-bottom: 2.25rem; }
-    h2 {
-      font-size: 1.05rem; font-weight: 600;
-      margin-bottom: 0.875rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--color-border);
-    }
-    p { font-size: 0.95rem; line-height: 1.75; color: var(--color-text-muted); margin-bottom: 0.75rem; }
-    p:last-child { margin-bottom: 0; }
+    h1 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+    .last-updated { font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 2.5rem; }
+    h2 { font-size: 1rem; font-weight: 600; margin: 2rem 0 0.625rem; }
+    p, li { font-size: 0.9375rem; line-height: 1.75; color: var(--color-text-muted); max-width: 65ch; }
     ul { padding-left: 1.25rem; margin-top: 0.5rem; }
-    li { font-size: 0.95rem; line-height: 1.75; color: var(--color-text-muted); margin-bottom: 0.375rem; }
-    strong { color: var(--color-text); font-weight: 600; }
+    li { margin-bottom: 0.375rem; }
+    hr { border: none; border-top: 1px solid var(--color-border); margin: 2.5rem 0; }
 
     footer {
       border-top: 1px solid var(--color-border);
@@ -89,127 +59,94 @@
       font-size: 0.8rem; color: var(--color-text-muted);
     }
     footer a { color: var(--color-text-muted); }
+    footer a:hover { color: var(--color-text); }
   </style>
 </head>
 <body>
 
   <nav>
-    <a href="./index.html" class="logo" aria-label="Back to home">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <circle cx="12" cy="12" r="10" fill="#e60023"/>
-        <path d="M12 7c-2.76 0-5 2.24-5 5 0 2.12 1.32 3.95 3.2 4.7-.04-.38-.08-.97.02-1.38.09-.38.62-2.62.62-2.62s-.16-.32-.16-.79c0-.74.43-1.3 1.06-1.3.5 0 .74.37.74.82 0 .5-.32 1.25-.49 1.95-.14.58.28 1.05.86 1.05 1.03 0 1.82-1.08 1.82-2.65 0-1.38-.99-2.35-2.41-2.35-1.64 0-2.6 1.23-2.6 2.5 0 .5.19.9.43 1.14.05.05.05.1.04.15l-.16.65c-.03.1-.09.12-.2.07-.74-.35-1.2-1.44-1.2-2.32 0-1.88 1.37-3.62 3.95-3.62 2.07 0 3.68 1.47 3.68 3.44 0 2.05-1.29 3.7-3.09 3.7-.6 0-1.17-.32-1.37-.68l-.37 1.4c-.14.52-.5 1.17-.74 1.56.56.17 1.15.26 1.77.26 2.76 0 5-2.24 5-5s-2.24-5-5-5z" fill="white"/>
+    <a href="./index.html" class="logo" aria-label="PublicadorAutomatico home">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <rect width="28" height="28" rx="7" fill="#2563eb"/>
+        <path d="M8 8h7a4 4 0 0 1 0 8h-4v6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       PublicadorAutomatico
     </a>
-    <a href="./index.html" class="nav-link">← Back to Home</a>
+    <a href="./index.html" class="nav-link">← Back</a>
   </nav>
 
   <main>
-    <div class="page-header">
-      <div class="policy-label">Privacy Policy</div>
-      <h1>Privacy Policy</h1>
-      <p>Last updated: April 25, 2026 &nbsp;·&nbsp; Effective immediately</p>
-    </div>
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last updated: May 5, 2026</p>
 
-    <section class="policy-section">
-      <h2>1. Introduction</h2>
-      <p>
-        This Privacy Policy describes how <strong>PublicadorAutomatico</strong>, operated by
-        <strong>Gustavo Bertazzoli</strong> ("we", "our", or "us"), handles information
-        when you use our personal Pinterest automation application.
-      </p>
-      <p>
-        PublicadorAutomatico is a personal developer tool that uses the Pinterest API
-        to publish and manage Pinterest content on behalf of the account owner.
-        It is not a public-facing service and does not collect data from third-party users.
-      </p>
-    </section>
+    <p>
+      This Privacy Policy describes how PublicadorAutomatico ("the Application", "we", "us")
+      collects, uses, and handles information in connection with the use of this personal
+      developer tool operated by Gustavo Bertazzoli.
+    </p>
 
-    <section class="policy-section">
-      <h2>2. Information We Access</h2>
-      <p>When authorised via the Pinterest OAuth flow, our application accesses:</p>
-      <ul>
-        <li>Pinterest account information (username, profile data)</li>
-        <li>Pinterest boards and Pins belonging to the authorised account</li>
-        <li>Analytics data (impressions, saves, clicks) for published Pins</li>
-      </ul>
-      <p>
-        This data is accessed solely for the purpose of publishing, scheduling, and
-        monitoring Pinterest content for the account owner. No data is sold, shared,
-        or transferred to third parties.
-      </p>
-    </section>
+    <h2>1. What This Application Does</h2>
+    <p>
+      PublicadorAutomatico is a personal automation tool that programmatically schedules and
+      publishes content to social media platforms via their official APIs. It is operated
+      solely by the application owner for their own personal social media account.
+    </p>
 
-    <section class="policy-section">
-      <h2>3. How We Use Information</h2>
-      <p>Information accessed through the Pinterest API is used exclusively to:</p>
-      <ul>
-        <li>Create and publish Pins to designated boards</li>
-        <li>Read board structures for content organisation</li>
-        <li>Retrieve performance metrics for internal reporting</li>
-        <li>Manage OAuth tokens required for continued API access</li>
-      </ul>
-    </section>
+    <h2>2. Data We Collect</h2>
+    <p>This application does not collect personal data from third-party users. The only data processed includes:</p>
+    <ul>
+      <li>API access tokens for the application owner's own social media accounts</li>
+      <li>Content data (text, images, URLs) created by the application owner</li>
+      <li>Operational logs for debugging purposes, stored locally</li>
+    </ul>
 
-    <section class="policy-section">
-      <h2>4. Data Storage and Security</h2>
-      <p>
-        OAuth access tokens and refresh tokens are stored locally in a secure
-        configuration file accessible only to the application operator.
-        No Pinterest user data is stored in external databases or transmitted
-        to third-party services beyond what is required to interact with the
-        Pinterest API itself.
-      </p>
-    </section>
+    <h2>3. Data Storage</h2>
+    <p>
+      All data is stored locally on the application owner's private server. No personal
+      data is shared with, sold to, or accessible by third parties. No cookies or tracking
+      technologies are used on this website.
+    </p>
 
-    <section class="policy-section">
-      <h2>5. Third-Party Services</h2>
-      <p>
-        This application interacts with the <strong>Pinterest API v5</strong>.
-        Use of the Pinterest API is governed by the
-        <a href="https://policy.pinterest.com/en/developer-guidelines" target="_blank" rel="noopener noreferrer">
-          Pinterest Developer Guidelines
-        </a>
-        and
-        <a href="https://policy.pinterest.com/en/terms-of-service" target="_blank" rel="noopener noreferrer">
-          Pinterest Terms of Service
-        </a>.
-      </p>
-    </section>
+    <h2>4. Third-Party APIs</h2>
+    <p>
+      This application interacts with third-party platform APIs (including but not limited
+      to social media and e-commerce platforms) solely on behalf of the application owner.
+      Use of those platforms is subject to their respective terms of service and privacy policies.
+    </p>
 
-    <section class="policy-section">
-      <h2>6. Your Rights (GDPR)</h2>
-      <p>
-        As a user based in the European Union, you have the right to access,
-        rectify, or erase any personal data we hold. Since this is a personal
-        tool with no external users, all data belongs to the operator.
-        For any privacy-related enquiries, please contact us at the address below.
-      </p>
-    </section>
+    <h2>5. Data Retention</h2>
+    <p>
+      Operational logs are retained for a maximum of 90 days and then automatically deleted.
+      No personal data from other individuals is retained.
+    </p>
 
-    <section class="policy-section">
-      <h2>7. Changes to This Policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time. The date at the top
-        of this page reflects the most recent revision. Continued use of the
-        application after changes constitutes acceptance of the updated policy.
-      </p>
-    </section>
+    <h2>6. Your Rights (GDPR)</h2>
+    <p>
+      As this tool is operated as a single-user personal tool, it does not process personal
+      data of other individuals. If you have any questions or concerns, please contact us
+      using the information below.
+    </p>
 
-    <section class="policy-section">
-      <h2>8. Contact</h2>
-      <p>
-        For questions or concerns regarding this Privacy Policy, please contact:<br />
-        <strong>Gustavo Bertazzoli</strong><br />
-        Milan, Lombardy, Italy<br />
-        <a href="mailto:privacy@publicadorautomatico.com">privacy@publicadorautomatico.com</a>
-      </p>
-    </section>
+    <h2>7. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. The "Last updated" date at the
+      top of this page reflects the most recent revision.
+    </p>
+
+    <hr>
+
+    <h2>Contact</h2>
+    <p>
+      Gustavo Bertazzoli<br>
+      For inquiries regarding this application, please use the contact form at the
+      application's hosting platform or reach out via the social media accounts linked
+      to this tool.
+    </p>
   </main>
 
   <footer>
     <span>© 2026 Gustavo Bertazzoli — PublicadorAutomatico</span>
-    <a href="./index.html">Home</a>
+    <a href="./index.html">← Home</a>
   </footer>
 
 </body>
